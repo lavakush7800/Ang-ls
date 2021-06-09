@@ -9,10 +9,68 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body style="background-repeat: no-repeat">
+<body>
+  <!-- <body style=" background-repeat: no-repeat"> -->
+  <div class="container">
+  <!--navigation start-->
+<nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top" >
+     <div class="container-fluid">
+<a class="navbar-brand" href="about.html" ><span style="font-size: 40px;font-weight: 600; font-family: 'Aclonica';font-size: 22px;color: white">E-Learning </span></a>
+ 
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+ <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+ <ul class="navbar-nav text-center ml-auto" >
+    
+   <li class="nav-item">
+     <a class="nav-link" href="about.html"><span style="font-size: 20px;font-weight: 400;color: white;  ">About</span></a>
+   </li>
+     
+     
+     <li class="nav-item dropdown">
+     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 20px;font-weight: 400;color: white;">
+       Study Materials
+     </a>
+     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+       <a class="dropdown-item" href="#">Action</a>
+       <a class="dropdown-item" href="#">Another action</a>
+       <div class="dropdown-divider"></div>
+       <a class="dropdown-item" href="#">Something else here</a>
+     </div>
+   </li>
+     
+     
+   
+     <li class="nav-item dropdown">
+     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 20px;font-weight: 400;color: white; ">
+       Classes
+     </a>
+     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+       <a class="dropdown-item" href="#">Action</a>
+       <a class="dropdown-item" href="#">Another action</a>
+       <div class="dropdown-divider"></div>
+       <a class="dropdown-item" href="#">Something else here</a>
+     </div>
+   </li>
+     
+   <li class="nav-item">
+       <a class="nav-link" href="#"><span style="font-size: 20px;font-weight: 400;color: white;  ">Register</span></a>
+   </li>
+   <li class="nav-item">
+       <a class="nav-link" href="#"><span style="font-size: 20px;font-weight: 400;color: white;"> Login</span></a>
+   </li>    
+ </ul>
+</div>  
+ </div>
+</nav>
+</div>
 
-<div class="container card">
-<h2>Registration Page</h2>
+
+<div class="container card" style="margin-top: 90px">
+  <div class="row">
+    <div class="col card">
+      <h2>Registration Page</h2>
   <form action="/action_page.php">
     <div class="form-group">
       <label for="name">Name:</label>
@@ -35,8 +93,33 @@
         <input class="form-check-input" type="checkbox" name="remember"> Remember me
       </label>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-block btn-sm btn-dark">Submit</button>
   </form>
+    </div>
+    <div class="vl"></div>
+    <div class="col card">
+      <h2>Login here</h2>
+      <form action="/action_page.php">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="" name="email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="" name="pswd">
+        </div>
+
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+          </label>
+        </div>
+        <button type="submit" class="btn btn-block btn-sm btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
 </div>
 
 </body>
